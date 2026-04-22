@@ -9,7 +9,7 @@ public class insertSortierer extends Sortierer {
         for (int i = 1; i < liste.size(); i++) {
             int j = i;
             while (j > 0 && liste.get(j) < liste.get(j - 1)) {
-                Collections.swap(liste, j, j - 1); // Vertauschen [cite: 53]
+                Collections.swap(liste, j, j - 1); // Vertauschen 
                 j--;
             }
         }

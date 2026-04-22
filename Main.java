@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         List<Integer> zahlen = new ArrayList<>();
         for (int i = 0; i < 500; i++) {
-            zahlen.add((int) (1900 + Math.random() * (2013 - 1900 + 1))); // [cite: 10]
+            zahlen.add((int) (1900 + Math.random() * (2013 - 1900 + 1))); // 
         }
 
         System.out.println("Unsortierte Liste:");

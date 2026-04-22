@@ -10,7 +10,7 @@ public class mergeSortierer extends Sortierer {
         if (l.size() <= 1) return l;
 
         int mid = l.size() / 2;
-        List<Integer> links = sortiere(new ArrayList<>(l.subList(0, mid))); // [cite: 72, 74]
+        List<Integer> links = sortiere(new ArrayList<>(l.subList(0, mid))); // 
         List<Integer> rechts = sortiere(new ArrayList<>(l.subList(mid, l.size())));
 
         return combine(links, rechts);
@@ -21,14 +21,14 @@ public class mergeSortierer extends Sortierer {
         ListIterator<Integer> itA = a.listIterator();
         ListIterator<Integer> itB = b.listIterator();
 
-        // Zusammenführen mittels Iteratoren [cite: 81-87]
+       
         while (itA.hasNext() && itB.hasNext()) {
             Integer valA = itA.next();
             Integer valB = itB.next();
 
             if (valA <= valB) {
                 result.add(valA);
-                itB.previous(); // Zurückgehen, da nur A verwendet [cite: 88, 89]
+                itB.previous(); // Zurückgehen, da nur A verwendet 
             } else {
                 result.add(valB);
                 itA.previous();

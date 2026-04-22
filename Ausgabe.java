@@ -4,9 +4,8 @@ public class Ausgabe {
     public static void liste(List<Integer> l) {
         for (int i = 0; i < l.size(); i++) {
             System.out.print(l.get(i) + " ");
-            if ((i + 1) % 30 == 0) System.out.println(); // 30 Elemente pro Zeile [cite: 30]
-        }
-        System.out.println(); // Leerzeile [cite: 31]
+            if ((i + 1) % 30 == 0) System.out.println(); // 30 Elemente pro Zeile 
+        System.out.println(); // Leerzeile 
     }
 
     public static void insertSort() { System.out.println("Sortiert mit InsertSort."); }
@@ -14,6 +13,6 @@ public class Ausgabe {
     public static void mergeSort() { System.out.println("Sortiert mit Mergesort."); }
 
     public static void zeit(long ms) {
-        System.out.println("Benötigte Rechenzeit: " + (ms / 1000.0) + "s"); // [cite: 33, 34]
+        System.out.println("Benötigte Rechenzeit: " + (ms / 1000.0) + "s"); // 
     }
 }

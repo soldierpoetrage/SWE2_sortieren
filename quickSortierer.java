@@ -6,9 +6,9 @@ public class quickSortierer extends Sortierer {
 
     @Override
     protected List<Integer> sortiere(List<Integer> l) {
-        if (l.size() <= 1) return l; // [cite: 61]
+        if (l.size() <= 1) return l; // 
 
-        int pivot = l.remove(0); // [cite: 62]
+        int pivot = l.remove(0); // 
         List<Integer> ersteListe = new ArrayList<>();
         List<Integer> zweiteListe = new ArrayList<>();
 

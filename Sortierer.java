@@ -7,22 +7,22 @@ public abstract class Sortierer {
     private long endTime;
 
     public Sortierer(List<Integer> liste) {
-        // Kopie der Liste erstellen [cite: 13, 14]
+        // Kopie der Liste erstellen 
         this.liste = new ArrayList<>(liste);
     }
 
-    // Öffentliche Methode zur Messung [cite: 17, 18]
+    // Öffentliche Methode zur Messung 
     public List<Integer> sortiere() {
-        startTime = System.currentTimeMillis(); // [cite: 20]
+        startTime = System.currentTimeMillis(); // 
         liste = sortiere(liste);
-        endTime = System.currentTimeMillis();   // [cite: 21]
+        endTime = System.currentTimeMillis();   // 
         return liste;
     }
 
-    // Abstrakte Methode für die Implementierung [cite: 15, 16]
+    // Abstrakte Methode für die Implementierung 
     protected abstract List<Integer> sortiere(List<Integer> l);
 
     public long getOperations() {
-        return endTime - startTime; // [cite: 22]
+        return endTime - startTime; // 
     }
 }
